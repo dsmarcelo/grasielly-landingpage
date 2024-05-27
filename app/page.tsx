@@ -2,6 +2,7 @@ import Image from "next/image";
 import PillButton from "./components/common/pillButton";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaChevronCircleRight } from "react-icons/fa";
+import { CarretIcon } from "./components/common/carretIcon";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
           className=""
           src="/Logo.svg"
           alt="Logo"
-          width={80}
+          width={120}
           height={0}
           priority
         />
@@ -21,16 +22,16 @@ export default function Home() {
           <h1>
             Sofreu um golpe e <span className="text-tertiary">perdeu</span> mais de <span className="text-secondary">R$4.000,00?</span>
           </h1>
-          <div className="gap-2">
+          <div className="gap-2 w-full justify-center">
             <p className="p-normal">
               Recupere seu dinheiro agora!
             </p>
-            <PillButton className='w-full max-w-96 mt-2'>
+            <PillButton className='w-full mx-auto max-w-96 mt-2'>
               <div className="flex items-center gap-3">
                 <IoLogoWhatsapp className="w-5 h-5" />
                 <span className="text-xl leading-none label-xlarge text-black">Entre em contato</span>
               </div>
-              <FaChevronCircleRight className="w-5 h-5" />
+              <CarretIcon />
             </PillButton>
           </div>
         </section>
