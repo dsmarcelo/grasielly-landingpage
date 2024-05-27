@@ -1,8 +1,11 @@
+'use client'
 import Image from "next/image";
 import PillButton from "./components/common/pillButton";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { CarretIcon } from "./components/common/carretIcon";
+import { motion } from "framer-motion"
+import { DropdownContainer } from "./components/common/dropdownContainer";
 
 export default function Home() {
   return (
@@ -19,26 +22,34 @@ export default function Home() {
       </header>
       <main className="w-full max-w-7xl pb-12">
         <section className="w-full my-[120px] flex flex-col gap-6 items-center justify-center font-normal text-center">
-          <h1>
+          <motion.h1
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.2 }}>
             Sofreu um golpe e <span className="text-tertiary">perdeu</span> mais de <span className="text-secondary">R$4.000,00?</span>
-          </h1>
-          <div className="gap-2 w-full justify-center">
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="gap-2 w-full justify-center">
             <p className="p-normal">
               Recupere seu dinheiro agora!
             </p>
             <PillButton className='w-full mx-auto max-w-96 mt-2'>
-              <div className="flex items-center gap-3">
+              <div
+                className="flex items-center gap-3">
                 <IoLogoWhatsapp className="w-5 h-5" />
                 <span className="text-xl leading-none label-xlarge text-black">Entre em contato</span>
               </div>
               <CarretIcon />
             </PillButton>
-          </div>
+          </motion.div>
         </section>
         <section>
-          {/*todo */}
+          <DropdownContainer />
         </section>
       </main>
-    </div>
+    </div >
   );
 }

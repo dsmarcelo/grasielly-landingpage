@@ -27,6 +27,14 @@ h2 {
   @apply text-xl font-light;
 }
 
+.label-normal {
+  @apply text-base font-semibold;
+}
+
+.label-large {
+  @apply text-xl font-semibold;
+}
+
 .label-xlarge {
   @apply text-2xl font-semibold;
 }
