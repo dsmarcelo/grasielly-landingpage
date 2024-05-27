@@ -2,28 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body, p, h1, h2, h3, h4, h5, h6, a, span {
+  @apply text-white;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, hsl(0,0%,0%) 4.5%,hsl(210,40%,13.7%) 30%,hsl(0,0%,0%) 60%);
+}
+
+h1 {
+  @apply text-4xl font-semibold;
+  @apply lg:text-7xl;
+  @apply leading-normal;
+}
+
+h2 {
+  @apply text-xl font-semibold;
+  @apply lg:text-5xl;
+  @apply leading-normal;
+}
+
+.p-normal {
+  @apply text-xl font-light;
+}
+
+.label-normal {
+  @apply text-base font-semibold;
+}
+
+.label-large {
+  @apply text-xl font-semibold;
+}
+
+.label-xlarge {
+  @apply text-2xl font-semibold;
 }
 
 @layer utilities {
@@ -31,3 +44,5 @@ body {
     text-wrap: balance;
   }
 }
+
+	/* --color-dark-gradient: linear-gradient(to bottom, hsl(0,0%,0%) 4.5%,hsl(210,40%,13.7%) 30%,hsl(0,0%,0%) 60%); */
