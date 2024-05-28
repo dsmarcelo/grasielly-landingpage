@@ -8,7 +8,9 @@ body, p, h1, h2, h3, h4, h5, h6, a, span {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, hsl(0,0%,0%) 4.5%,hsl(210,40%,13.7%) 30%,hsl(0,0%,0%) 60%);
+  height: 100vh;
+  background: black;
+  background-image: linear-gradient(to bottom, hsl(0,0%,0%) 4.5%,hsl(210,40%,13.7%) 30%,hsl(0,0%,0%) 60%);
 }
 
 h1 {
