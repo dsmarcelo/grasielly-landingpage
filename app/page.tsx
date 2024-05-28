@@ -3,9 +3,9 @@ import Image from "next/image";
 import PillButton from "./components/common/pillButton";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaChevronCircleRight } from "react-icons/fa";
-import { CarretIcon } from "./components/common/carretIcon";
 import { motion } from "framer-motion"
 import { DropdownContainer } from "./components/common/dropdownContainer";
+import CarretIcon from "./assets/images/caret_right_icon.svg";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
                 <IoLogoWhatsapp className="w-5 h-5" />
                 <span className="text-xl leading-none label-xlarge text-black">Entre em contato</span>
               </div>
-              <CarretIcon />
+              <CarretIcon className='h-8' />
             </PillButton>
           </motion.div>
         </section>
