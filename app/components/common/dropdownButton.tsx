@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 interface Props {
   item: {
     title: string
-    description: string
+    description: string | JSX.Element
   }
 }
 
