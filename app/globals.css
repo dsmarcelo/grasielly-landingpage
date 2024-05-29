@@ -29,6 +29,10 @@ h2 {
   background-image: linear-gradient(to bottom, hsl(0,0%,0%) 5%,hsl(210,40%,13.7%) 40%,hsl(0,0%,0%) 100%);
 }
 
+.p-small {
+  @apply text-sm
+}
+
 .p-normal {
   @apply text-xl;
 }
