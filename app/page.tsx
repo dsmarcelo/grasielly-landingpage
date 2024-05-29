@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen mx-auto flex flex-col justify-center items-center">
       <div className="w-full relative flex justify-center">
-        <div className="mx-auto z-20 flex flex-col justify-center items-center px-4 md:px-10 lg:px-20 max-w-7xl">
+        <div className="mx-auto z-20 flex flex-col justify-center items-center px-6 md:px-10 lg:px-20 max-w-7xl">
           <header className="flex items-center justify-center h-20">
             <Image
               className=""
@@ -54,11 +54,11 @@ export default function Home() {
         <div className="w-full absolute top-0 left-0 h-full dark-gradient"></div>
       </div>
 
-      <div className="px-4 md:px-10 lg:px-20 max-w-7xl">
+      <div className="px-6 md:px-10 lg:px-20 max-w-7xl">
         <section className="w-full mb-20 flex flex-col items-center gap-6 md:gap-12">
           <h2 className="">ENTENDA O GOLPE DO PIX:</h2>
-          <div className="flex flex-col sm:flex-row gap-6 md:gap-12">
-            <div className="p-small md:text-base sm:w-1/2">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-12">
+            <div className="w-full p-normal sm:text-base ">
               <p className="">
                 “Golpe do PIX” é um termo abrangente para se referir a diversas fraudes que têm acontecido envolvendo esse sistema de transações financeiras.
               </p>
@@ -72,13 +72,13 @@ export default function Home() {
                 Diversos outros tipos de golpe têm surgido e, havendo consumação do ato criminoso envolvendo o uso do PIX, o golpe é caracterizado.
               </p>
             </div>
-            <div className="relative aspect-square sm:w-1/2">
+            <div className="relative w-full aspect-video min-h-20 sm:1/2 sm:max-w-[300px]">
               <Image
                 className="rounded-3xl"
                 src="/Phone.jpg"
                 alt="Pessoa segurando celular"
-                layout="fill"
                 objectFit="cover"
+                layout="fill"
                 priority
               />
             </div>

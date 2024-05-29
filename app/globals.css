@@ -34,7 +34,7 @@ h2 {
 }
 
 .p-normal {
-  @apply text-xl;
+  @apply text-base;
 }
 
 .p-large {
