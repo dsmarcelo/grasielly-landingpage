@@ -30,7 +30,11 @@ h2 {
 }
 
 .p-normal {
-  @apply text-xl font-light;
+  @apply text-xl;
+}
+
+.p-large {
+  @apply text-2xl;
 }
 
 .label-normal {
