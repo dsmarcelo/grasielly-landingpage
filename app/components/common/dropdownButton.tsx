@@ -18,7 +18,7 @@ export const DropdownButton = ({ item }: Props) => {
       onClick={() => setIsOpen(!isOpen)}
       className='w-full px-4 rounded-xl text-white bg-dark-blue border-slate-700 border-solid'
     >
-      <div className={`flex py-2 gap-1 justify-between transition-all ease-in-out ${!isOpen && 'hover:pl-1'}`}>
+      <div className={`flex py-4 gap-1 justify-between transition-all ease-in-out ${!isOpen && 'hover:pl-1'}`}>
         <span className='label-large'>{item.title}</span>
         <CarretIcon className={`fill-white w-4 transition-all duration-300 ${isOpen ? '-rotate-90' : 'rotate-90'}`} />
       </div>
