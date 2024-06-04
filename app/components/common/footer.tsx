@@ -10,7 +10,7 @@ export const Footer = () => {
     >
       <Image
         className=""
-        src="/Logo.svg"
+        src="/icons/Logo.svg"
         alt="Logo"
         width={120}
         height={0}

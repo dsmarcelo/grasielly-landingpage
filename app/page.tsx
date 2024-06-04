@@ -15,7 +15,7 @@ export default function Home() {
           <header className="flex items-center justify-center h-20">
             <Image
               className=""
-              src="/Logo.svg"
+              src="/icons/Logo.svg"
               alt="Logo"
               width={170}
               height={0}
